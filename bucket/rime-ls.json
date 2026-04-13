@@ -3,6 +3,12 @@
     "description": "A language server for Rime input method engine.",
     "homepage": "https://github.com/wlh320/rime-ls",
     "license": "BSD-3-Clause",
+    "depends": "librime-msvc",
+    "notes": [
+        "This package requires 'librime-msvc' at runtime for rime.dll.",
+        "Scoop installs 'librime-msvc' automatically and exposes its 'lib' directory via PATH.",
+        "If your editor still cannot find rime.dll after install or update, restart the shell/editor session."
+    ],
     "architecture": {
         "64bit": {
             "url": "https://github.com/wlh320/rime-ls/releases/download/v0.4.3/rime-ls-v0.4.3-x86_64-pc-windows-msvc.7z",

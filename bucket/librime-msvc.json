@@ -19,6 +19,7 @@
         "bin\\rime_dict_manager.exe",
         "bin\\rime_patch.exe"
     ],
+    "env_add_path": "lib",
     "env_set": {
         "LIBRIME_INCLUDE_DIR": "$dir\\include",
         "LIBRIME_LIB_DIR": "$dir\\lib",
