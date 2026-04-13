@@ -1,0 +1,21 @@
+{
+    "version": "0.4.3",
+    "description": "A language server for Rime input method engine.",
+    "homepage": "https://github.com/wlh320/rime-ls",
+    "license": "BSD-3-Clause",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/wlh320/rime-ls/releases/download/v0.4.3/rime-ls-v0.4.3-x86_64-pc-windows-msvc.7z",
+            "hash": "18ba762e73f8501961223f08f18a39f3295b228002fc64547898686d788c540c"
+        }
+    },
+    "bin": ["rime_ls.exe", ["rime_ls.exe", "rime-ls"]],
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/wlh320/rime-ls/releases/download/v$version/rime-ls-v$version-x86_64-pc-windows-msvc.7z"
+            }
+        }
+    }
+}
