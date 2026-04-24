@@ -1,6 +1,6 @@
 {
     "version": "0.22.0",
-    "description": "A language server for emmylua.",
+    "description": "A language server for EmmyLua.",
     "homepage": "https://github.com/EmmyLuaLs/emmylua-analyzer-rust",
     "license": "MIT",
     "architecture": {
@@ -17,7 +17,9 @@
             "hash": "b9106bd4c6bf415ef4b5d4dcb0bafe452730fdf948861b2c952a80b6cd8c53b0"
         }
     },
-    "bin": "emmylua_ls.exe",
+    "bin": [
+        ["emmylua_ls.exe", "emmylua_ls"]
+    ],
     "checkver": "github",
     "autoupdate": {
         "architecture": {
@@ -31,5 +33,10 @@
                 "url": "https://github.com/EmmyLuaLs/emmylua-analyzer-rust/releases/download/$version/emmylua_ls-win32-arm64.zip"
             }
         }
-    }
+    },
+    "notes": [
+        "Restart your terminal and Neovim after installation.",
+        "Verify with: where.exe emmylua_ls",
+        "Verify in Neovim with: :lua print(vim.fn.executable('emmylua_ls'))"
+    ]
 }
