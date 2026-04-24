@@ -9,7 +9,7 @@
             "Mouser"
         ]
     ],
-    "license": "MIT"，
+    "license": "MIT",
     "architecture": {
         "64bit": {
             "url": "https://github.com/TomBadash/Mouser/releases/download/v3.5.3/Mouser-Windows.zip",
