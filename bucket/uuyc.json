@@ -103,6 +103,5 @@
         "hash": {
             "mode": "download"
         }
-    },
-    "note": "This app does not persist user data, as there is no need to do so."
+    }
 }
