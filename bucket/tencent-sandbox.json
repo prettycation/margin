@@ -1,0 +1,44 @@
+{
+    "version": "1.2.2",
+    "description": "Windows Sandbox configuration for Tencent applications (QQ, WeChat, WeMeet, etc.)",
+    "homepage": "https://github.com/empty-233/tencent-sandbox",
+    "license": "MIT",
+    "url": "https://github.com/empty-233/tencent-sandbox/releases/download/v1.2.2/package.tar.gz",
+    "hash": "sha256:21c4ee732b6ad2bdd40cac97976ce1735d59393b58daf230f16057eff1892ba4",
+    "post_install": [
+        "if (!(Test-Path \"$dir\\App\")) { New-Item -ItemType Directory -Path \"$dir\\App\" -Force | Out-Null }",
+        "if (!(Test-Path \"$dir\\Data\")) { New-Item -ItemType Directory -Path \"$dir\\Data\" -Force | Out-Null }",
+        "Write-Host ''",
+        "Write-Host 'tencent-sandbox has been installed!' -ForegroundColor Green",
+        "Write-Host 'Usage:' -ForegroundColor Cyan",
+        "Write-Host '1. Use the Start Menu shortcut \"Tencent Sandbox\"' -ForegroundColor White",
+        "Write-Host '2. Or navigate to: $dir and double-click Tencent.wsb' -ForegroundColor White",
+        "Write-Host '3. Install Tencent applications inside the sandbox' -ForegroundColor White",
+        "Write-Host ''",
+        "Write-Host 'Directory structure (App, Data) has been automatically created.' -ForegroundColor Green",
+        "Write-Host ''",
+        "Write-Host 'Requirements:' -ForegroundColor Yellow",
+        "Write-Host '- Windows 10 Pro/Enterprise/Education (build 18305+)' -ForegroundColor White",
+        "Write-Host '- Windows 11 Pro/Enterprise/Education' -ForegroundColor White",
+        "Write-Host '- Windows Sandbox feature enabled' -ForegroundColor White",
+        "Write-Host ''",
+        "Write-Host 'To enable Windows Sandbox, run as Administrator:' -ForegroundColor Yellow",
+        "Write-Host 'Enable-WindowsOptionalFeature -Online -FeatureName Containers-DisposableClientVM -All' -ForegroundColor White",
+        "Write-Host ''",
+        "Write-Host 'All Tencent application data will persist after closing the sandbox (stored in App and Data folders)' -ForegroundColor Green"
+    ],
+    "shortcuts": [
+        [
+            "Tencent.wsb",
+            "Tencent Sandbox"
+        ]
+    ],
+    "persist": [
+        "App",
+        "Data"
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/empty-233/tencent-sandbox/releases/download/v$version/package.tar.gz"
+    }
+}
