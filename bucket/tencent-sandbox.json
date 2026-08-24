@@ -4,7 +4,7 @@
     "homepage": "https://github.com/empty-233/tencent-sandbox",
     "license": "MIT",
     "url": "https://github.com/empty-233/tencent-sandbox/releases/download/v1.2.2/package.tar.gz",
-    "hash": "null",
+    "hash": "sha256:21c4ee732b6ad2bdd40cac97976ce1735d59393b58daf230f16057eff1892ba4",
     "post_install": [
         "if (!(Test-Path \"$dir\\App\")) { New-Item -ItemType Directory -Path \"$dir\\App\" -Force | Out-Null }",
         "if (!(Test-Path \"$dir\\Data\")) { New-Item -ItemType Directory -Path \"$dir\\Data\" -Force | Out-Null }",
