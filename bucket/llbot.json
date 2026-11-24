@@ -12,16 +12,21 @@
             "hash": "38fde3cc61d76fc9bfcfabcc7b0b362a5c938016d8b57a1665d4173492d3981f"
         }
     },
-    "bin": "llbot.exe",
+    "bin": [
+        [
+            "LuckyLillia.exe",
+            "llbot"
+        ]
+    ],
     "shortcuts": [
         [
-            "llbot.exe",
+            "LuckyLillia.exe",
             "LLBot"
         ]
     ],
     "persist": [
-        "bin\\llbot\\data",
-        "bin\\pmhq\\pmhq_config.json"
+        "data",
+        "bin\\llbot\\data"
     ],
     "checkver": {
         "github": "https://github.com/LuckyLilliaDev/LuckyLilliaBot"
