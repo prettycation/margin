@@ -3,7 +3,7 @@
     "description": "Portable Chinese chorded typing platform (速录宝) with customizable input schemes",
     "homepage": "https://srbbj.cn/",
     "license": "Unknown",
-    "url": "https://srbbj.cn/public/files/soft.7z",
+    "url": "http://srbbj.cn/public/files/soft.7z",
     "hash": "cb58486de18849fde0bdb19d128bf3d9fcc73475c1157ffaf207a869109243ab",
     "pre_install": [
         "$entries = @(Get-ChildItem -LiteralPath $dir -Force)",
